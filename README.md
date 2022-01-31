@@ -1,18 +1,14 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# MY PORTFOLIO
+# Module 1 capstone project
 
-> Welcome to my portfolio on github !!!
+> **Welcome to my HTML/CSS and JavaScript basics capstone project on github !!!**
+> It's a Chess world championship conference website
 
 ![screenshot](resources/app-screenshot-hello-section.png)
 
 <details>
   <summary>Please click to view more sections</summary>
-  
-Works section     |About me section |Contact me section
-:----------------:|:-------------------------:|:------------------------------:
-![](./resources/app-screenshot-works-section.png)    |  ![](./resources/app-screenshot-about-me-section.png)  | ![](./resources/app-screenshot-contact-me-section.png) 
-</details>
 
 ## Built With
 
@@ -22,7 +18,7 @@ Works section     |About me section |Contact me section
 
 ## Live Demo
 
-[Live Demo Link](https://sboursen.github.io/My-portfolio/)
+[Live Link]()
 
 ## Authors
 
@@ -35,19 +31,19 @@ Works section     |About me section |Contact me section
 ## Contributors
 
 > Many thanks to these amazing people who helped me
-> in this project 🙏🙏🙏
+> complete this project 🙏🙏🙏
 
-👤 **Ridwan Diallo**
+👤 **A**
 
-- GitHub: @githubridwan
-- Twitter: @twitterridwan
-- LinkedIn: LinkedIn
+- GitHub: [@A](https://github.com/A)
+- Twitter: [@A](https://twitter.com/A)
+- LinkedIn: [A](https://linkedin.com/in/A)
 
-👤 **Vignesh**
+👤 **A**
 
-- GitHub: [@vikipretium](https://github.com/vikipretium)
-- Twitter: [@vikipretium](https://twitter.com/vikipretium)
-- LinkedIn: [vikipretium](https://linkedin.com/in/vikipretium)
+- GitHub: [@A](https://github.com/A)
+- Twitter: [@A](https://twitter.com/A)
+- LinkedIn: [A](https://linkedin.com/in/A)
 
 ## Show your support
 
@@ -55,4 +51,8 @@ Give a ⭐️ if you like my portfolio!
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT.md) licensed.
+
+## Acknowledgements
+
+Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07)
