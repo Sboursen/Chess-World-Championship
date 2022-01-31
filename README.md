@@ -1,73 +1,58 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# MY PORTFOLIO
 
-> Description the project.
+> Welcome to my portfolio on github !!!
 
+![screenshot](resources/app-screenshot-hello-section.png)
+
+<details>
+  <summary>Please click to view more sections</summary>
+  
+Works section     |About me section |Contact me section
+:----------------:|:-------------------------:|:------------------------------:
+![](./resources/app-screenshot-works-section.png)    |  ![](./resources/app-screenshot-about-me-section.png)  | ![](./resources/app-screenshot-contact-me-section.png) 
+</details>
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
+- Javascript
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+[Live Demo Link](https://sboursen.github.io/My-portfolio/)
 
 ## Authors
 
-👤 **Author1**
+👤 **Soufiane Boursen**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Sboursen](https://github.com/Sboursen)
+- Twitter: [@sboursen_dev](https://twitter.com/sboursen_dev)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/sboursen)
 
-👤 **Author2**
+## Contributors
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+> Many thanks to these amazing people who helped me
+> in this project 🙏🙏🙏
 
-## 🤝 Contributing
+👤 **Ridwan Diallo**
 
-Contributions, issues, and feature requests are welcome!
+- GitHub: @githubridwan
+- Twitter: @twitterridwan
+- LinkedIn: LinkedIn
 
-Feel free to check the [issues page](../../issues/).
+👤 **Vignesh**
+
+- GitHub: [@vikipretium](https://github.com/vikipretium)
+- Twitter: [@vikipretium](https://twitter.com/vikipretium)
+- LinkedIn: [vikipretium](https://linkedin.com/in/vikipretium)
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+Give a ⭐️ if you like my portfolio!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./LICENSE) licensed.
