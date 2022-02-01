@@ -8,6 +8,10 @@
 }
 
 /* ||| General style overrides------------------------------------- */
+html {
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
   padding: 0;
@@ -72,7 +76,7 @@ header {
 }
 
 .mobile-nav {
-  width: 100%;
+  width: calc(100% - 48px);
   height: 48px;
   margin: 12px 24px;
   background-color: white;
@@ -129,6 +133,7 @@ header {
   align-items: center;
   padding-top: 12px;
   padding-bottom: 12px;
+  box-shadow: 4px 0 4px 1px lightslategray;
 }
 
 .nav-bar .logo {
@@ -176,6 +181,48 @@ header {
   font-family: COCOGOOSE, sans-serif;
 }
 
+/* ||| headline section-------------------------------------- */
+.headline-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  min-height: calc(100vh - 76px);
+}
+
+.headline-section > * {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.headline-section .hello {
+  color: var(--red-orange);
+  font-size: 24px;
+}
+
+.headline-section .title {
+  color: var(--red-orange);
+  font-size: 56px;
+}
+
+.headline-section .supporting-text {
+  padding: 12px;
+  background-color: var(--iron);
+  border: 3px solid white;
+}
+
+.headline-section .date {
+  color: var(--shark);
+  font-size: 48px;
+}
+
+.headline-section .place {
+  color: var(--shark);
+  font-size: 24px;
+  font-weight: bolder;
+}
+
 /* ||| mobile only-------------------------------------- */
 
 @media only screen and (max-width: 768px) {
@@ -194,4 +241,20 @@ header {
   .desktop-nav {
     display: flex;
   }
+
+  /* || headline section */
+  .headline-section {
+    min-height: calc(100vh - 121px);
+  }
+  .headline-section > * {
+    margin-left: calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 24px
+    );
+    margin-right: calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 24px
+    );
+    max-width: 80%;
+  }
+  .headline-section .supporting-text {
+  max-width: var(--media-breakpoint);
 }
