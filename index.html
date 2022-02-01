@@ -19,6 +19,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0">
   <title>Home | CWC</title>
@@ -26,8 +27,13 @@
 
 <body>
   <header>
-    <div class="account-bar">
-      <ul>
+    <div class="mobile-nav">
+      <button class="mobile-menu-button">
+        <i class="fas fa-bars fa-2x"></i>
+      </button>
+    </div>
+    <div class="desktop-nav">
+      <ul class="account-bar">
         <li>
           <a href="#">
             <i class="fab fa-facebook-f"></i>
@@ -54,55 +60,58 @@
           </a>
         </li>
       </ul>
-    </div>
-    <nav class="nav-bar">
-      <div class="logo">
-        <img src="./images/logo.png" alt="logo">
-        <div class="logo-text">Chess World Championship
+      <nav class="nav-bar">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="logo">
+          <h3 class="logo-text">Chess World <br> Conference
+          </h3>
         </div>
-      </div>
-      <div class="pages">
-        <ul>
-          <li>
-            <a href="#">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="pages/about.html">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Program
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Join
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Sponsor
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              News
-            </a>
-          </li>
-        </ul>
-      </div>
-      <button type="button" class="compaign-button">
-        CWC Campaign
-      </button>
-    </nav>
+        <div class="page-navigation">
+          <ul class="pages">
+            <li>
+              <a href="#">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="pages/about.html">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Program
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Join
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Sponsor
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                News
+              </a>
+            </li>
+          </ul>
+          <button type="button"
+            class="compaign-button button">
+            CWC Campaign
+          </button>
+        </div>
+      </nav>
+    </div>
+
   </header>
 
   <main>
     <section class="headline-section">
+      <div class="headline-section-bg"></div>
       <h1 class="title">Chess World <br> Championship
         conference <br> 2022</h1>
       <p class="supporting-text">Q joyful celebration

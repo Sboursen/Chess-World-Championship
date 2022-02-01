@@ -4,7 +4,13 @@
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:js": "eslint main.json",
+    "lint:css": "stylelint **/*.{css,scss}",
+    "lint:html": "hint index.html",
+    "lintfix:js": "eslint main.json --fix",
+    "lintfix:css": "stylelint **/*.{css,scss} --fix",
+    "lintfix:html": "hint index.html --fix"
   },
   "repository": {
     "type": "git",
