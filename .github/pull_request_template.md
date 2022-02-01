@@ -5,21 +5,18 @@ Put a short concise description for your work here.
 - First item
 - Second item
 
-- Consider adding a screenshot of you webpage ...
-
-- Consider adding a live link to your GitHub pages.
-
 ### General requirements
 
-- [ ] There are no linter errors.
-- [ ] Followed the **Github flow**.
-- [ ] The documentation is professional.
+- [x] There are no linter errors.
+- [x] Followed the **Github flow**.
+- [x] The documentation is professional.
 
-### HTML/CSS requirements
+### HTML/CSS and JavaScript requirements
 
-- Follow our list of best practices for HTML & CSS
+- [x] Followed the list of [best practices for HTML & CSS](https://github.com/microverseinc/curriculum-html-css/blob/main/articles/html_css_best_practices.md).
+- [x] Followed the list of [best practices for JavaScript](https://github.com/microverseinc/curriculum-html-css/blob/main/articles/javascript_best_practices.md)
 
-### Project requirements
+### Milestone requirements
 
 - [ ] task 1
 - [ ] task 2
