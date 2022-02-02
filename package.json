@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint:js": "eslint main.json",
+    "lint:js": "eslint main.js",
     "lint:css": "stylelint **/*.{css,scss}",
     "lint:html": "hint ./*.html && hint ./**/*.html",
-    "lintfix:js": "eslint main.json --fix",
+    "lintfix:js": "eslint main.js --fix",
     "lintfix:css": "stylelint **/*.{css,scss} --fix",
-    "lintfix:html": "hint ./*.html --fix"
+    "lintfix:html": "hint ./*.html --fix && hint ./**/*.html --fix"
   },
   "repository": {
     "type": "git",

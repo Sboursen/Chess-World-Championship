@@ -110,12 +110,14 @@ header {
 }
 
 .desktop-nav > * {
-  padding-left: calc(
-    0.2 * (100vw - var(--media-breakpoint)) + 12px
-  );
-  padding-right: calc(
-    0.2 * (100vw - var(--media-breakpoint)) + 12px
-  );
+  padding-left:
+    calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 12px
+    );
+  padding-right:
+    calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 12px
+    );
 }
 
 .account-bar {
@@ -389,41 +391,51 @@ header {
 
 /* speakers */
 .speaker1 .profile-photo {
-  background-image: url(./images/morphy1.jpg),
-    url(./images/chessboard.svg);
+  background-image:
+    url("./images/morphy1.jpg"),
+    url("./images/chessboard.svg");
 }
 
 .speaker2 .profile-photo {
-  background-image: url(./images/petrosian2.jpg),
-    url(./images/chessboard.svg);
+  background-image:
+    url("./images/petrosian2.jpg"),
+    url("./images/chessboard.svg");
 }
 
 .speaker3 .profile-photo {
-  background-image: url(./images/kasparov3.jpg),
-    url(./images/chessboard.svg);
+  background-image:
+    url("./images/kasparov3.jpg"),
+    url("./images/chessboard.svg");
 }
 
 .speaker4 .profile-photo {
-  background-image: url(./images/Judit4.jpg),
-    url(./images/chessboard.svg);
+  background-image:
+    url("./images/Judit4.jpg"),
+    url("./images/chessboard.svg");
 }
+
 .speaker5 .profile-photo {
-  background-image: url(./images/capablanca5.jpg),
-    url(./images/chessboard.svg);
+  background-image:
+    url("./images/capablanca5.jpg"),
+    url("./images/chessboard.svg");
 }
 
 .speaker6 .profile-photo {
-  background-image: url(./images/tal6.jpg),
-    url(./images/chessboard.svg);
+  background-image:
+    url("./images/tal6.jpg"),
+    url("./images/chessboard.svg");
 }
+
 .speaker7 .profile-photo {
-  background-image: url(./images/fischer7.jpg),
-    url(./images/chessboard.svg);
+  background-image:
+    url("./images/fischer7.jpg"),
+    url("./images/chessboard.svg");
 }
 
 .speaker8 .profile-photo {
-  background-image: url(./images/steinitz8.jpg),
-    url(./images/chessboard.svg);
+  background-image:
+    url("./images/steinitz8.jpg"),
+    url("./images/chessboard.svg");
 }
 
 /* ||| partners section-------------------------------------- */
@@ -530,12 +542,14 @@ header {
   }
 
   .headline-section > * {
-    margin-left: calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 24px
-    );
-    margin-right: calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 24px
-    );
+    margin-left:
+      calc(
+        0.2 * (100vw - var(--media-breakpoint)) + 24px
+      );
+    margin-right:
+      calc(
+        0.2 * (100vw - var(--media-breakpoint)) + 24px
+      );
     max-width: 80%;
   }
 
@@ -545,21 +559,24 @@ header {
 
   /* program section */
   .program-section > * {
-    margin-left: calc(
-      0.15 * (100vw - var(--media-breakpoint)) + 24px
-    );
-    margin-right: calc(
-      0.15 * (100vw - var(--media-breakpoint)) + 24px
-    );
+    margin-left:
+      calc(
+        0.15 * (100vw - var(--media-breakpoint)) + 24px
+      );
+    margin-right:
+      calc(
+        0.15 * (100vw - var(--media-breakpoint)) + 24px
+      );
     max-width: 80%;
   }
 
   .program-section ul {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax(220px, 1fr)
-    );
+    grid-template-columns:
+      repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+      );
     grid-auto-rows: auto;
     align-items: center;
     justify-items: center;
@@ -573,7 +590,7 @@ header {
     padding: 12px;
     justify-content: center;
     align-content: space-between;
-    background-color: rgba(211, 211, 211, 0.2);
+    background-color: rgb(211 211 211 / 20%);
     max-width: 195px;
   }
 
@@ -594,12 +611,14 @@ header {
   /* speakers section */
 
   .speakers-section > * {
-    margin-left: calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 12px
-    );
-    margin-right: calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 12px
-    );
+    margin-left:
+      calc(
+        0.2 * (100vw - var(--media-breakpoint)) + 12px
+      );
+    margin-right:
+      calc(
+        0.2 * (100vw - var(--media-breakpoint)) + 12px
+      );
   }
 
   .dynamic-speakers {
@@ -619,12 +638,14 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 48px 0;
-    margin-left: calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 12px
-    );
-    margin-right: calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 12px
-    );
+    margin-left:
+      calc(
+        0.2 * (100vw - var(--media-breakpoint)) + 12px
+      );
+    margin-right:
+      calc(
+        0.2 * (100vw - var(--media-breakpoint)) + 12px
+      );
   }
 
   .license .logo-text {

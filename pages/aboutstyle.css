@@ -110,12 +110,14 @@ header {
 }
 
 .desktop-nav > * {
-  padding-left: calc(
-    0.2 * (100vw - var(--media-breakpoint)) + 12px
-  );
-  padding-right: calc(
-    0.2 * (100vw - var(--media-breakpoint)) + 12px
-  );
+  padding-left:
+    calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 12px
+    );
+  padding-right:
+    calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 12px
+    );
 }
 
 .account-bar {
@@ -373,11 +375,11 @@ header {
 
 /* speakers */
 .event1 {
-  background-image: url(../images/Hastings1895.jpg);
+  background-image: url("../images/Hastings1895.jpg");
 }
 
 .event2 {
-  background-image: url(../images/StPete1909.jpg);
+  background-image: url("../images/StPete1909.jpg");
 }
 
 /* ||| partners section-------------------------------------- */
@@ -533,12 +535,14 @@ header {
   }
 
   .headline-section > * {
-    margin-left: calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 24px
-    );
-    margin-right: calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 24px
-    );
+    margin-left:
+      calc(
+        0.2 * (100vw - var(--media-breakpoint)) + 24px
+      );
+    margin-right:
+      calc(
+        0.2 * (100vw - var(--media-breakpoint)) + 24px
+      );
     max-width: 80%;
   }
 
@@ -552,24 +556,28 @@ header {
 
   /* About logo section */
   .about-logo-section > * {
-    margin-left: calc(
-      0.15 * (100vw - var(--media-breakpoint)) + 24px
-    );
-    margin-right: calc(
-      0.15 * (100vw - var(--media-breakpoint)) + 24px
-    );
+    margin-left:
+      calc(
+        0.15 * (100vw - var(--media-breakpoint)) + 24px
+      );
+    margin-right:
+      calc(
+        0.15 * (100vw - var(--media-breakpoint)) + 24px
+      );
     max-width: 80%;
   }
 
   /* ||| past events section */
 
   .speakers-section > * {
-    margin-left: calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 12px
-    );
-    margin-right: calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 12px
-    );
+    margin-left:
+      calc(
+        0.2 * (100vw - var(--media-breakpoint)) + 12px
+      );
+    margin-right:
+      calc(
+        0.2 * (100vw - var(--media-breakpoint)) + 12px
+      );
   }
 
   .dynamic-speakers {
@@ -589,12 +597,14 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 48px 0;
-    margin-left: calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 12px
-    );
-    margin-right: calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 12px
-    );
+    margin-left:
+      calc(
+        0.2 * (100vw - var(--media-breakpoint)) + 12px
+      );
+    margin-right:
+      calc(
+        0.2 * (100vw - var(--media-breakpoint)) + 12px
+      );
   }
 
   .license .logo-text {
