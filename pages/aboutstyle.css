@@ -82,6 +82,98 @@ button {
   cursor: pointer;
 }
 
+/* ||| Absolutely positioned elements----------------------------------------- */
+.header-hello-background {
+  position: absolute;
+  top: 0;
+  background-image: url('./resources/headline-section-responsive-background.svg');
+  background-repeat: no-repeat;
+  background-size: 230% 150vh;
+  background-position: bottom -10vh left calc(50% + 40px);
+  min-height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.mobile-menu {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+  background-image: url('../images/mobile-bg.png');
+  background-size: 100% auto;
+  backdrop-filter: blur(4px);
+}
+
+.toolbar {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+.cancel {
+  margin: 11px 22px auto auto;
+  padding: 12px;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: var(--shark);
+  background-image: url('../images/cancel-icon.svg');
+  background-position: center;
+}
+
+.middle-part {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.mobile-list {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0 12px;
+  background-color: rgba(40, 41, 49, 0.25);
+  width: calc(100% - 24px);
+  padding: 12px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-list li {
+  width: 100%;
+  border: 2px solid #fff;
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+
+.mobile-list a {
+  display: block;
+  padding: 12px;
+  color: var(--shark);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.middle-part .campaign-button {
+  align-self: center;
+  width: fit-content;
+}
+
+.mobile-menu .account-bar {
+  justify-content: center;
+}
+
 /* ||| Header styling----------------------------------------- */
 header {
   width: 100%;
@@ -110,14 +202,12 @@ header {
 }
 
 .desktop-nav > * {
-  padding-left:
-    calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 12px
-    );
-  padding-right:
-    calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 12px
-    );
+  padding-left: calc(
+    0.2 * (100vw - var(--media-breakpoint)) + 12px
+  );
+  padding-right: calc(
+    0.2 * (100vw - var(--media-breakpoint)) + 12px
+  );
 }
 
 .account-bar {
@@ -375,11 +465,11 @@ header {
 
 /* speakers */
 .event1 {
-  background-image: url("../images/Hastings1895.jpg");
+  background-image: url('../images/Hastings1895.jpg');
 }
 
 .event2 {
-  background-image: url("../images/StPete1909.jpg");
+  background-image: url('../images/StPete1909.jpg');
 }
 
 /* ||| partners section-------------------------------------- */
@@ -535,14 +625,12 @@ header {
   }
 
   .headline-section > * {
-    margin-left:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 24px
-      );
-    margin-right:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 24px
-      );
+    margin-left: calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 24px
+    );
+    margin-right: calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 24px
+    );
     max-width: 80%;
   }
 
@@ -556,28 +644,24 @@ header {
 
   /* About logo section */
   .about-logo-section > * {
-    margin-left:
-      calc(
-        0.15 * (100vw - var(--media-breakpoint)) + 24px
-      );
-    margin-right:
-      calc(
-        0.15 * (100vw - var(--media-breakpoint)) + 24px
-      );
+    margin-left: calc(
+      0.15 * (100vw - var(--media-breakpoint)) + 24px
+    );
+    margin-right: calc(
+      0.15 * (100vw - var(--media-breakpoint)) + 24px
+    );
     max-width: 80%;
   }
 
   /* ||| past events section */
 
   .speakers-section > * {
-    margin-left:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 12px
-      );
-    margin-right:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 12px
-      );
+    margin-left: calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 12px
+    );
+    margin-right: calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 12px
+    );
   }
 
   .dynamic-speakers {
@@ -597,18 +681,50 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 48px 0;
-    margin-left:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 12px
-      );
-    margin-right:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 12px
-      );
+    margin-left: calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 12px
+    );
+    margin-right: calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 12px
+    );
   }
 
   .license .logo-text {
     text-align: left;
     max-width: 60%;
   }
+}
+/* ||| animations and effects --------------------------------- */
+
+.cancel:hover {
+  background-color: var(--red-orange);
+}
+
+.cancel:active {
+  border: 0.5px solid var(--iron);
+  background-color: var(--red-orange);
+  cursor: pointer;
+}
+
+.mobile-list li:hover {
+  background-color: var(--iron);
+  transition: background-color 0.2s;
+  transition-timing-function: ease-out;
+  cursor: pointer;
+}
+
+.mobile-list li:active {
+  background-color: var(--iron);
+  border: 2px solid var(--red-orange);
+  cursor: pointer;
+}
+
+a.to-the-top-button.icon-animation {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 5px;
+  z-index: 3;
+  transform: rotate(180deg);
+  box-shadow: -2px -2px 10px 1px lightgray;
 }
