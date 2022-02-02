@@ -772,6 +772,18 @@ header {
   cursor: pointer;
 }
 
+.page-navigation button:hover {
+  color: white;
+  background-color: var(--red-orange);
+  border: 3px solid var(--red-orange);
+}
+
+.page-navigation button:active {
+  color: white;
+  background-color: var(--red-orange);
+  border: 3px solid var(--shark);
+}
+
 .mobile-list li:hover {
   background-color: var(--iron);
   transition: background-color 0.2s;
