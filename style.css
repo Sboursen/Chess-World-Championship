@@ -110,6 +110,7 @@ header {
 .desktop-nav {
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 
 .desktop-nav > * {
@@ -538,10 +539,11 @@ header {
 .header-hello-background {
   position: absolute;
   top: 0;
-  background-image: url('./resources/headline-section-responsive-background.svg');
-  background-repeat: no-repeat;
-  background-size: 230% 150vh;
-  background-position: bottom -10vh left calc(50% + 40px);
+  background-image: url('./images/headline-bg.jpg');
+  filter: grayscale(100%) brightness(120%) contrast(10%);
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
   min-height: 100vh;
   width: 100%;
   z-index: -1;
