@@ -18,7 +18,7 @@
 
 ## Live Demo
 
-[Live Link]()
+[Live Link](https://sboursen.github.io/Chess-World-Championship/)
 
 ## Authors
 
