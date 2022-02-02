@@ -7,7 +7,7 @@
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon"
-    href="../images/favicon.ico">
+    href="/images/favicon.ico">
   <link rel="stylesheet"
     href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
@@ -21,13 +21,21 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="aboutstyle.css">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
   <title>About | CWC</title>
 </head>
 
 <body>
   <header>
-    <div class="account-bar">
-      <ul>
+    <div class="mobile-nav">
+      <button class="mobile-menu-button">
+        <i class="fas fa-bars fa-2x"></i>
+      </button>
+    </div>
+    <div class="desktop-nav">
+      <ul class="account-bar">
         <li>
           <a href="#">
             <i class="fab fa-facebook-f"></i>
@@ -39,7 +47,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a class="third-child" href="#">
             English
           </a>
         </li>
@@ -54,76 +62,63 @@
           </a>
         </li>
       </ul>
-    </div>
-    <nav class="nav-bar">
-      <div class="logo">
-        <img src="../images/logo.png" alt="logo">
-        <div class="logo-text">Chess World Championship
+      <nav class="nav-bar">
+        <div class="logo">
+          <img src="../images/logo.svg" alt="logo">
+          <h3 class="logo-text">Chess World <br> Conference
+          </h3>
         </div>
-      </div>
-      <div class="pages">
-        <ul>
-          <li>
-            <a href="../index.html">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Program
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Join
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Sponsor
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              News
-            </a>
-          </li>
-        </ul>
-      </div>
-      <button type="button" class="compaign-button">
-        CWC Campaign
-      </button>
-    </nav>
-    <div class="site-map">
-      <ul>
-        <li>
-          <a href="../index.html">
-            <i class="fas fa-home"></i>
-          </a>
-        </li>
-        <li>
-          &#x3E
-        </li>
-        <li>
-          <a href="#">
-            About
-          </a>
-        </li>
-      </ul>
+        <div class="page-navigation">
+          <ul class="pages">
+            <li>
+              <a href="../index.html">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Program
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Join
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Sponsor
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                News
+              </a>
+            </li>
+          </ul>
+          <button type="button"
+            class="compaign-button button">
+            CWC Campaign
+          </button>
+        </div>
+      </nav>
     </div>
+
   </header>
   <main>
-    <section class="title-section">
-      <h1 class="title">Chess World <br> Championship
-        conference 2022</h1>
-      <hr>
-    </section>
-    <section class="description-section">
+    <div class="headline-section-bg"></div>
+    <section class="headline-section">
+      <div class="title-container">
+        <p class="hello">"Hello! Chess world"</p>
+        <h1 class="title">Chess World <br> conference
+          2022</h1>
+      </div>
+
       <p class="supporting-text">Q joyful celebration
         believing in the value of
         openness and sharing,creating a positive change with
@@ -133,29 +128,47 @@
         openness and sharing,creating a positive change with
         people from over 80 countries is taking place in
         October, in Korea.</p>
+      <div class="contact">
+        <p>Please contact us per Email for any further
+          questions about CC Global Summit 2022!</p>
+        <h3>ccsummit2022@cckorea.org</h3>
+      </div>
+
     </section>
-    <section class="contact-section">
-      <p>Please contact us per Email for any further
-        questions about CC Global Summit 2022!</p>
-      <h3>ccsummit2022@cckorea.org</h3>
-    </section>
+
     <section class="about-logo-section">
-      <h2 class="title">Chess World <br> Championship
-        conference 2022</h2>
-      <hr>
-      <p class="description">
+      <div class="title-group">
+        <h2 class="title">Chess World Championship logo</h2>
+        <hr>
+      </div>
+
+      <p class="supporting-text">
+        believing in the value of
+        openness and sharing,creating a positive change with
+        people from over 80 countries is taking place in
+        October, in Korea.
+        believing in the value of
+        openness and sharing,creating a positive change with
+        people from over 80 countries is taking place in
+        October, in Korea.
         believing in the value of
         openness and sharing,creating a positive change with
         people from over 80 countries is taking place in
         October, in Korea.
       </p>
-      <div class="logo">
-        <img src="../images/logo.png" alt="logo">
-        <h3 class="logo-text">
-          CC GLOBAL SUMMIT 2022
-        </h3>
+
+      <div class="logo-container">
+        <div class="logo">
+          <img src="../images/logo.svg" alt="logo">
+          <h3 class="logo-text">Chess World <br> Conference
+          </h3>
+        </div>
+        <small>14th - 17th oct 2015 | the moon</small>
       </div>
+
+
     </section>
+
     <section class="past-events">
       <h2 class="title">See past CWC conferences</h2>
       <hr>
@@ -182,7 +195,48 @@
       </div>
     </section>
 
+    <section class="partners-section">
+      <div class="title-group">
+        <h2 class="title">Partner</h2>
+        <hr>
+      </div>
+      <ul>
+        <li>
+          Mozilla
+        </li>
+        <li>
+          Google
+        </li>
+        <li>
+          NAVER
+        </li>
+        <li>
+          daumkakao
+        </li>
+        <li>
+          Airbnb
+        </li>
+      </ul>
+    </section>
+
+
+
   </main>
+
+  <footer class="license">
+
+    <div class="logo">
+      <img src="../images/logo.svg" alt="logo">
+      <h3 class="logo-text">Chess World <br> Conference
+      </h3>
+    </div>
+    <p class="logo-text">
+      believing in the value of
+      openness and sharing,creating a positive change with
+      people from over 80
+    </p>
+
+  </footer>
 </body>
 
 </html>
