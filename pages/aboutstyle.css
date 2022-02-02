@@ -310,116 +310,74 @@ header {
   border-top: 2px solid var(--shark);
 }
 
-/* ||| speakers section-------------------------------------- */
+/* ||| past events section-------------------------------------- */
 
-.speakers-section {
+.past-events-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  gap: 16px;
-  min-height: 100vh;
+  gap: 64px;
   background-color: white;
   padding-top: 50px;
   padding-bottom: 50px;
+  box-shadow: 0 0 1px 0 lightslategray;
 }
 
-.speakers-section > * {
+.past-events-section > * {
   margin-left: 16px;
   margin-right: 16px;
 }
 
-.speakers-section .title-group {
+.past-events-section .title-group {
   display: flex;
   flex-direction: column;
   gap: 12px;
   align-items: center;
 }
 
-.speakers-section .title {
+.past-events-section .title {
   color: var(--shark);
   font-size: 24px;
 }
 
-.dynamic-speakers {
+.past-events-section hr {
+  padding-bottom: 0;
+}
+
+.event-list {
   width: calc(100% - 2 * 16px);
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
+  display: flex;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  row-gap: 96px;
-  column-gap: 48px;
+  gap: 48px;
 }
 
-.dynamic-speakers hr {
-  width: 10px;
-  padding: 0 12px;
+.event {
+  width: 360px;
+  height: 260px;
 }
 
-.dynamic-speakers li {
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
-  align-items: flex-start;
-}
-
-.dynamic-speakers .profile-photo {
-  width: 150px;
-  height: 150px;
-  min-width: 150px;
-  min-height: 150px;
-  background-color: white;
-  background-repeat: no-repeat;
-  background-position: bottom right, top left;
-  background-size: 90% 90%, 40% 40%;
-}
-
-.dynamic-speakers .profile-info {
-  padding-top: 12px;
+.event-info {
+  background-color: rgba(255, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 12px;
-  color: var(--shark);
+  color: white;
 }
 
 /* speakers */
-.speaker1 .profile-photo {
-  background-image: url(./images/morphy1.jpg),
-    url(./images/chessboard.svg);
+.event1 {
+  background-image: url(../images/Hastings1895.jpg);
 }
 
-.speaker2 .profile-photo {
-  background-image: url(./images/petrosian2.jpg),
-    url(./images/chessboard.svg);
-}
-
-.speaker3 .profile-photo {
-  background-image: url(./images/kasparov3.jpg),
-    url(./images/chessboard.svg);
-}
-
-.speaker4 .profile-photo {
-  background-image: url(./images/Judit4.jpg),
-    url(./images/chessboard.svg);
-}
-.speaker5 .profile-photo {
-  background-image: url(./images/capablanca5.jpg),
-    url(./images/chessboard.svg);
-}
-
-.speaker6 .profile-photo {
-  background-image: url(./images/tal6.jpg),
-    url(./images/chessboard.svg);
-}
-.speaker7 .profile-photo {
-  background-image: url(./images/fischer7.jpg),
-    url(./images/chessboard.svg);
-}
-
-.speaker8 .profile-photo {
-  background-image: url(./images/steinitz8.jpg),
-    url(./images/chessboard.svg);
+.event2 {
+  background-image: url(../images/StPete1909.jpg);
 }
 
 /* ||| partners section-------------------------------------- */
