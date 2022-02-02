@@ -156,6 +156,7 @@ header {
   flex-direction: row;
   align-items: center;
   font-family: COCOGOOSE, sans-serif;
+  cursor: pointer;
 }
 
 .nav-bar img {
@@ -583,7 +584,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
+  gap: 64px;
 }
 
 .mobile-list {

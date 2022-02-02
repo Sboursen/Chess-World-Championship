@@ -149,3 +149,12 @@ const loadSpeakers = () => {
   });
 };
 document.addEventListener('DOMContentLoaded', loadSpeakers);
+
+// |||Onclick logo
+const navLogo = document.querySelector('header .logo');
+
+const gotoHome = () => {
+  window.location.href = '/index.html';
+};
+
+navLogo.addEventListener('click', gotoHome);
