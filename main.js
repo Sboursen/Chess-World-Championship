@@ -95,7 +95,7 @@ const speakersData = [
     id: 'speaker5',
     name: 'José Raúl Capablanca',
     description1: 'World Chess champion 1927',
-    description2: 'World Chess Hall of Fame 2001',
+    description2: 'World Chess Hall of Fame Inducted 2001',
     moreInfoLink:
       'https://worldchesshof.org/chess-hall-of-fame/paul-morphy',
   },

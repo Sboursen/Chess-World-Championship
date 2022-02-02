@@ -83,98 +83,6 @@ button {
   cursor: pointer;
 }
 
-/* ||| Absolutely positioned elements----------------------------------------- */
-.header-hello-background {
-  position: absolute;
-  top: 0;
-  background-image: url('./resources/headline-section-responsive-background.svg');
-  background-repeat: no-repeat;
-  background-size: 230% 150vh;
-  background-position: bottom -10vh left calc(50% + 40px);
-  min-height: 100vh;
-  width: 100%;
-  z-index: -1;
-}
-
-.mobile-menu {
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  min-height: 100vh;
-  width: 100%;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  z-index: -2;
-  background-image: url('./images/mobile-bg.png');
-  background-size: 100% auto;
-  backdrop-filter: blur(4px);
-}
-
-.toolbar {
-  display: flex;
-  width: 100%;
-  justify-content: end;
-}
-
-.cancel {
-  margin: 11px 22px auto auto;
-  padding: 12px;
-  height: 32px;
-  width: 32px;
-  border-radius: 50%;
-  background-color: var(--shark);
-  background-image: url('./images/cancel-icon.svg');
-  background-position: center;
-}
-
-.middle-part {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-}
-
-.mobile-list {
-  box-sizing: border-box;
-  list-style: none;
-  margin: 0 12px;
-  background-color: rgba(40, 41, 49, 0.25);
-  width: calc(100% - 24px);
-  padding: 12px 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  justify-content: center;
-  align-items: center;
-}
-
-.mobile-list li {
-  width: 100%;
-  border: 2px solid #fff;
-  border: 2px solid transparent;
-  border-radius: 10px;
-}
-
-.mobile-list a {
-  display: block;
-  padding: 12px;
-  color: var(--shark);
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-}
-
-.middle-part .campaign-button {
-  align-self: center;
-  width: fit-content;
-}
-
-.mobile-menu .account-bar {
-  justify-content: center;
-}
-
 /* ||| Header styling----------------------------------------- */
 header {
   position: relative;
@@ -309,8 +217,13 @@ header {
 }
 
 .headline-section .title {
-  color: var(--red-orange);
+  font-family: Lato, sans-serif;
   font-size: 56px;
+  font-weight: 800;
+  background-image: url('./images/tittle-bg.jpg');
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .headline-section .supporting-text {
@@ -321,7 +234,7 @@ header {
 
 .headline-section .date {
   color: var(--shark);
-  font-size: 48px;
+  font-size: 36px;
 }
 
 .headline-section .place {
@@ -338,6 +251,7 @@ header {
   justify-content: space-around;
   gap: 16px;
   min-height: 50vh;
+  background-image: url('./images/program-bg.png');
   background-color: var(--shark);
   padding-top: 50px;
   padding-bottom: 50px;
@@ -446,7 +360,7 @@ header {
   grid-template-columns: auto;
   grid-template-rows: auto;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   row-gap: 96px;
   column-gap: 48px;
 }
@@ -461,6 +375,7 @@ header {
   flex-direction: row;
   gap: 12px;
   align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .dynamic-speakers .profile-photo {
@@ -479,6 +394,22 @@ header {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  color: var(--shark);
+}
+
+.dynamic-speakers .name {
+  color: var(--shark);
+}
+
+.dynamic-speakers .hall-of-fame {
+  color: var(--shark);
+}
+
+.dynamic-speakers li hr {
+  border-color: var(--red-orange);
+}
+
+.dynamic-speakers li a {
   color: var(--shark);
 }
 
@@ -602,6 +533,98 @@ header {
   max-width: 50%;
 }
 
+/* ||| Absolutely positioned elements----------------------------------------- */
+.header-hello-background {
+  position: absolute;
+  top: 0;
+  background-image: url('./resources/headline-section-responsive-background.svg');
+  background-repeat: no-repeat;
+  background-size: 230% 150vh;
+  background-position: bottom -10vh left calc(50% + 40px);
+  min-height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.mobile-menu {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  min-height: 100vh;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: -2;
+  background-image: url('./images/mobile-bg.png');
+  background-size: 100% auto;
+  backdrop-filter: blur(4px);
+}
+
+.toolbar {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+.cancel {
+  margin: 11px 22px auto auto;
+  padding: 12px;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: var(--shark);
+  background-image: url('./images/cancel-icon.svg');
+  background-position: center;
+}
+
+.middle-part {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.mobile-list {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0 12px;
+  background-color: rgba(40, 41, 49, 0.25);
+  width: calc(100% - 24px);
+  padding: 12px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-list li {
+  width: 100%;
+  border: 2px solid #fff;
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+
+.mobile-list a {
+  display: block;
+  padding: 12px;
+  color: var(--shark);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.middle-part .campaign-button {
+  align-self: center;
+  width: fit-content;
+}
+
+.mobile-menu .account-bar {
+  justify-content: center;
+}
+
 /* ||| mobile only-------------------------------------- */
 
 @media only screen and (max-width: 768px) {
@@ -625,10 +648,6 @@ header {
     display: none;
   }
 
-  .pages li:nth-child(1) {
-    display: none;
-  }
-
   /* || headline section */
   .headline-section {
     min-height: calc(100vh - 121px);
@@ -642,6 +661,10 @@ header {
       0.2 * (100vw - var(--media-breakpoint)) + 24px
     );
     max-width: 80%;
+  }
+
+  .headline-section .title {
+    font-size: 96px;
   }
 
   .headline-section .supporting-text {
@@ -660,12 +683,8 @@ header {
   }
 
   .program-section ul {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax(220px, 1fr)
-    );
-    grid-auto-rows: auto;
+    display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-items: center;
     gap: 8px;
@@ -735,18 +754,6 @@ header {
   .license .logo-text {
     text-align: left;
     max-width: 60%;
-  }
-}
-
-/* |||@media large desktop menu----------------------------- */
-
-@media only screen and (min-width: 992px) {
-  .pages li:nth-child(1) {
-    display: block;
-  }
-
-  .pages li:nth-child(1) a {
-    color: var(--red-orange);
   }
 }
 
