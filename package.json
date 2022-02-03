@@ -10,7 +10,7 @@
     "lint:html": "hint ./*.html && hint ./**/*.html",
     "lintfix:js": "eslint main.js --fix",
     "lintfix:css": "stylelint **/*.{css,scss} --fix",
-    "lintfix:html": "hint ./*.html --fix && hint ./**/*.html --fix"
+    "lintfix:html": "hint ./*.html -f && hint ./**/*.html -f"
   },
   "repository": {
     "type": "git",
