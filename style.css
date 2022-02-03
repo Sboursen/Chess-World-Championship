@@ -223,7 +223,7 @@ header {
 
 .headline-section .title {
   font-family: Lato, sans-serif;
-  font-size: 56px;
+  font-size: 48px;
   font-weight: 800;
   background-image: url('./images/tittle-bg.jpg');
   /* stylelint-disable-next-line property-no-vendor-prefix */
@@ -239,13 +239,16 @@ header {
 
 .headline-section .date {
   color: var(--shark);
-  font-size: 36px;
+  font-size: 32px;
+  font-weight: bold;
+  overflow-wrap: break-word;
 }
 
 .headline-section .place {
   color: var(--shark);
   font-size: 24px;
   font-weight: bolder;
+  overflow-wrap: break-word;
 }
 
 /* ||| program section-------------------------------------- */
@@ -543,7 +546,7 @@ header {
   position: absolute;
   top: 0;
   background-image: url('./images/headline-bg.jpg');
-  filter: grayscale(100%) brightness(120%) contrast(10%);
+  filter: grayscale(80%) brightness(200%) contrast(15%);
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
@@ -669,8 +672,12 @@ header {
     max-width: 80%;
   }
 
+  .headline-section .hello {
+    font-size: 32px;
+  }
+
   .headline-section .title {
-    font-size: 96px;
+    font-size: 64px;
   }
 
   .headline-section .supporting-text {

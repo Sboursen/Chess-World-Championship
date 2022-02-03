@@ -23,6 +23,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: Lato, sans-serif;
+  background-color: #747474;
 }
 
 hr {
@@ -111,14 +112,12 @@ header {
 }
 
 .desktop-nav > * {
-  padding-left:
-    calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 12px
-    );
-  padding-right:
-    calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 12px
-    );
+  padding-left: calc(
+    0.2 * (100vw - var(--media-breakpoint)) + 12px
+  );
+  padding-right: calc(
+    0.2 * (100vw - var(--media-breakpoint)) + 12px
+  );
 }
 
 .account-bar {
@@ -209,7 +208,9 @@ header {
   align-items: center;
   text-align: center;
   gap: 24px;
-  min-height: calc(100vh - 76px);
+  min-height: 100vh;
+  background-color: var(--iron);
+  background-color: transparent;
 }
 
 .headline-section > * {
@@ -225,7 +226,7 @@ header {
 .headline-section .title {
   color: var(--red-orange);
   font-family: Lato, sans-serif;
-  font-size: 56px;
+  font-size: 48px;
   font-weight: 800;
   margin-bottom: 24px;
 }
@@ -234,6 +235,7 @@ header {
   padding: 12px;
   background-color: var(--iron);
   border: 3px solid white;
+  overflow-wrap: break-word;
 }
 
 .headline-section .contact {
@@ -242,12 +244,22 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 12px;
   align-items: center;
+  inline-size: 90%;
 }
 
 .headline-section .contact p {
   color: var(--shark);
+  font-size: 16px;
+  inline-size: 90%;
+}
+
+.headline-section .contact h3 {
+  color: var(--shark);
   font-size: 24px;
+  inline-size: 90%;
+  overflow-wrap: break-word;
 }
 
 /* ||| about logo section-------------------------------------- */
@@ -383,11 +395,11 @@ header {
 
 /* speakers */
 .event1 {
-  background-image: url("../images/Hastings1895.jpg");
+  background-image: url('../images/Hastings1895.jpg');
 }
 
 .event2 {
-  background-image: url("../images/StPete1909.jpg");
+  background-image: url('../images/StPete1909.jpg');
 }
 
 /* ||| partners section-------------------------------------- */
@@ -473,8 +485,8 @@ header {
 .header-hello-background {
   position: absolute;
   top: 0;
-  background-image: url("../images/headline-bg.jpg");
-  filter: grayscale(100%) brightness(120%) contrast(10%);
+  background-image: url('../images/headline-bg.jpg');
+  filter: grayscale(100%) brightness(200%) contrast(15%);
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
@@ -493,7 +505,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   z-index: -2;
-  background-image: url("../images/mobile-bg.png");
+  background-image: url('../images/mobile-bg.png');
   background-size: 100% auto;
   backdrop-filter: blur(4px);
 }
@@ -511,7 +523,7 @@ header {
   width: 32px;
   border-radius: 50%;
   background-color: var(--shark);
-  background-image: url("../images/cancel-icon.svg");
+  background-image: url('../images/cancel-icon.svg');
   background-position: center;
 }
 
@@ -639,20 +651,21 @@ header {
   }
 
   .headline-section > * {
-    margin-left:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 24px
-      );
-    margin-right:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 24px
-      );
+    margin-left: calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 24px
+    );
+    margin-right: calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 24px
+    );
     max-width: 80%;
   }
 
+  .headline-section .hello {
+    font-size: 32px;
+  }
+
   .headline-section .title {
-    font-size: 72px;
-    max-width: var(--media-breakpoint);
+    font-size: 64px;
   }
 
   .headline-section .supporting-text {
@@ -661,28 +674,24 @@ header {
 
   /* About logo section */
   .about-logo-section > * {
-    margin-left:
-      calc(
-        0.15 * (100vw - var(--media-breakpoint)) + 24px
-      );
-    margin-right:
-      calc(
-        0.15 * (100vw - var(--media-breakpoint)) + 24px
-      );
+    margin-left: calc(
+      0.15 * (100vw - var(--media-breakpoint)) + 24px
+    );
+    margin-right: calc(
+      0.15 * (100vw - var(--media-breakpoint)) + 24px
+    );
     max-width: 80%;
   }
 
   /* ||| past events section */
 
   .speakers-section > * {
-    margin-left:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 12px
-      );
-    margin-right:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 12px
-      );
+    margin-left: calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 12px
+    );
+    margin-right: calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 12px
+    );
   }
 
   .dynamic-speakers {
@@ -702,14 +711,12 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 48px 0;
-    margin-left:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 12px
-      );
-    margin-right:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 12px
-      );
+    margin-left: calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 12px
+    );
+    margin-right: calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 12px
+    );
   }
 
   .license .logo-text {
