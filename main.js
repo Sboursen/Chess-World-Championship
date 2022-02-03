@@ -20,6 +20,7 @@ function showMobileMenu(e) {
   ) {
     mobileMenu.style.display = 'flex';
     mobileMenu.style['z-index'] = 2;
+    document.body.style.overflow = 'hidden';
   }
 }
 
@@ -32,6 +33,7 @@ function hideMobileMenu(e) {
   ) {
     mobileMenu.style.display = 'none';
     mobileMenu.style['z-index'] = -2;
+    document.body.style.overflow = 'scroll';
   }
 }
 
@@ -41,10 +43,12 @@ function hideMobileMenuOnEvent(e) {
       if (window.innerWidth > MEDIA_BREAKPOINT) {
         mobileMenu.style.display = 'none';
         mobileMenu.style['z-index'] = -2;
+        document.body.style.overflow = 'scroll';
       }
     } else {
       mobileMenu.style.display = 'none';
       mobileMenu.style['z-index'] = -2;
+      document.body.style.overflow = 'scroll';
     }
   }
 }
@@ -52,7 +56,6 @@ function hideMobileMenuOnEvent(e) {
 mobileMenuButton.addEventListener('click', showMobileMenu);
 cancelMobileMenu.addEventListener('click', hideMobileMenu);
 mobileMenuList.forEach((node) => node.addEventListener('click', hideMobileMenu));
-window.addEventListener('scroll', hideMobileMenuOnEvent);
 window.addEventListener('resize', hideMobileMenuOnEvent);
 
 // |||Dynamic project details generation
@@ -128,31 +131,24 @@ const dynamicSpeakers = document.querySelector(
 );
 
 const loadSpeakers = () => {
-  speakersData.forEach((speaker) => {
-    const render = `
-          <li class="${speaker.id}">
-          <div class="profile-photo">
-          </div>
-          <div class="profile-info">
-            <h3 class="name">${speaker.name}</h3>
-            <p class="hall-of-fame">${speaker.description1}<br>${speaker.description2}
-            </p>
-            <hr>
-            <a
-              href="${speaker.moreInfoLink}">More
-              info</a>
-          </div>
-          </li>`;
-    dynamicSpeakers.innerHTML += `\n ${render}`;
-  });
+  if (dynamicSpeakers !== null) {
+    speakersData.forEach((speaker) => {
+      const render = `
+            <li class="${speaker.id}">
+            <div class="profile-photo">
+            </div>
+            <div class="profile-info">
+              <h3 class="name">${speaker.name}</h3>
+              <p class="hall-of-fame">${speaker.description1}<br>${speaker.description2}
+              </p>
+              <hr>
+              <a
+                href="${speaker.moreInfoLink}">More
+                info</a>
+            </div>
+            </li>`;
+      dynamicSpeakers.innerHTML += `\n ${render}`;
+    });
+  }
 };
 document.addEventListener('DOMContentLoaded', loadSpeakers);
-
-// |||Onclick logo
-const navLogo = document.querySelector('header .logo');
-
-const gotoHome = () => {
-  window.location.href = '/index.html';
-};
-
-navLogo.addEventListener('click', gotoHome);

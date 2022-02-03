@@ -23,6 +23,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: Lato, sans-serif;
+  background-color: #747474;
 }
 
 hr {
@@ -72,13 +73,14 @@ button {
 
 .button:hover {
   border: 0.5px solid transparent;
-  box-shadow: 0 8px 16px 0 #36b37f3d;
+  box-shadow: 0 4px 6px 3px var(--iron);
   cursor: pointer;
 }
 
 .button:active {
-  border: 0.5px solid #172b4d;
-  background: hsl(160deg 100% 36%);
+  border: 0.5px solid var(--red-orange);
+  background: white;
+  color: var(--red-orange);
   cursor: pointer;
 }
 
@@ -169,6 +171,7 @@ header {
   font-weight: 100;
   position: relative;
   top: 6px;
+  color: var(--shark);
 }
 
 .page-navigation {
@@ -209,7 +212,9 @@ header {
   align-items: center;
   text-align: center;
   gap: 24px;
-  min-height: calc(100vh - 76px);
+  min-height: 100vh;
+  background-color: var(--iron);
+  background-color: transparent;
 }
 
 .headline-section > * {
@@ -225,15 +230,17 @@ header {
 .headline-section .title {
   color: var(--red-orange);
   font-family: Lato, sans-serif;
-  font-size: 56px;
+  font-size: 48px;
   font-weight: 800;
   margin-bottom: 24px;
 }
 
 .headline-section .supporting-text {
   padding: 12px;
-  background-color: var(--iron);
-  border: 3px solid white;
+  color: var(--shark);
+  font-size: 18px;
+  background-color: rgb(255 255 255 / 20%);
+  border: 2px solid var(--iron);
 }
 
 .headline-section .contact {
@@ -242,12 +249,23 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 12px;
   align-items: center;
+  inline-size: 90%;
 }
 
 .headline-section .contact p {
   color: var(--shark);
+  font-size: 20px;
+  inline-size: 90%;
+}
+
+.headline-section .contact h3 {
+  color: var(--shark);
   font-size: 24px;
+  font-weight: 700;
+  inline-size: 90%;
+  overflow-wrap: break-word;
 }
 
 /* ||| about logo section-------------------------------------- */
@@ -379,6 +397,8 @@ header {
   align-items: center;
   gap: 12px;
   color: white;
+  background-size: auto 100%;
+  background-position: center;
 }
 
 /* speakers */
@@ -388,6 +408,11 @@ header {
 
 .event2 {
   background-image: url("../images/StPete1909.jpg");
+}
+
+.event-info:hover {
+  background-color: #ad00004d;
+  background-size: auto 200%;
 }
 
 /* ||| partners section-------------------------------------- */
@@ -445,6 +470,7 @@ header {
   align-items: center;
   padding: 48px 16px;
   gap: 24px;
+  background-color: white;
 }
 
 .license .logo {
@@ -469,12 +495,16 @@ header {
   max-width: 50%;
 }
 
+.license .logo:hover {
+  transform: scale(1.1);
+}
+
 /* ||| Absolutely positioned elements----------------------------------------- */
 .header-hello-background {
   position: absolute;
   top: 0;
   background-image: url("../images/headline-bg.jpg");
-  filter: grayscale(100%) brightness(120%) contrast(10%);
+  filter: grayscale(100%) brightness(200%) contrast(15%);
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
@@ -560,6 +590,10 @@ header {
 
 .mobile-menu .account-bar {
   justify-content: center;
+}
+
+.partners-section li:hover {
+  transform: scale(1.2);
 }
 
 /* |||@media small mobile logo-------------------------------- */
@@ -650,9 +684,12 @@ header {
     max-width: 80%;
   }
 
+  .headline-section .hello {
+    font-size: 32px;
+  }
+
   .headline-section .title {
-    font-size: 72px;
-    max-width: var(--media-breakpoint);
+    font-size: 64px;
   }
 
   .headline-section .supporting-text {
@@ -701,15 +738,9 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 48px 0;
-    margin-left:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 12px
-      );
-    margin-right:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 12px
-      );
+    padding:
+      48px
+      calc(0.2 * (100vw - var(--media-breakpoint)) + 12px);
   }
 
   .license .logo-text {
