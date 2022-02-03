@@ -305,6 +305,8 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #d3d3d333;
+  border: 3px solid var(--iron);
+  border: 3px solid transparent;
 }
 
 .program-section li > div {
@@ -812,6 +814,23 @@ header {
   border: 2px solid var(--red-orange);
   cursor: pointer;
 }
+
+/* program-section  */
+.program-section li:hover {
+  transform: scale(1.05);
+}
+
+.program-section li:active {
+  transform: scale(1);
+  border: 3px solid var(--iron);
+}
+
+
+/* speakers-section  */
+.dynamic-speakers a:hover {
+  color: var(--red-orange);
+}
+
 
 a.to-the-top-button.icon-animation {
   display: none;
