@@ -71,7 +71,8 @@ button {
 }
 
 .button:hover {
-  border: 0.5px solid var(--red-orange);
+  border: 0.5px solid transparent;
+  box-shadow: 0 8px 16px 0 #36b37f3d;
   cursor: pointer;
 }
 
@@ -79,99 +80,6 @@ button {
   border: 0.5px solid #172b4d;
   background: hsl(160deg 100% 36%);
   cursor: pointer;
-}
-
-/* ||| Absolutely positioned elements----------------------------------------- */
-.header-hello-background {
-  position: absolute;
-  top: 0;
-  background-image: url('../images/headline-bg.jpg');
-  filter: grayscale(100%) brightness(120%) contrast(10%);
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  width: 100%;
-  z-index: -1;
-}
-
-.mobile-menu {
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  min-height: 100vh;
-  width: 100%;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  z-index: -2;
-  background-image: url('../images/mobile-bg.png');
-  background-size: 100% auto;
-  backdrop-filter: blur(4px);
-}
-
-.toolbar {
-  display: flex;
-  width: 100%;
-  justify-content: end;
-}
-
-.cancel {
-  margin: 11px 22px auto auto;
-  padding: 12px;
-  height: 32px;
-  width: 32px;
-  border-radius: 50%;
-  background-color: var(--shark);
-  background-image: url('../images/cancel-icon.svg');
-  background-position: center;
-}
-
-.middle-part {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 64px;
-}
-
-.mobile-list {
-  box-sizing: border-box;
-  list-style: none;
-  margin: 0 12px;
-  background-color: rgba(40, 41, 49, 0.25);
-  width: calc(100% - 24px);
-  padding: 12px 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  justify-content: center;
-  align-items: center;
-}
-
-.mobile-list li {
-  width: 100%;
-  border: 2px solid #fff;
-  border: 2px solid transparent;
-  border-radius: 10px;
-}
-
-.mobile-list a {
-  display: block;
-  padding: 12px;
-  color: var(--shark);
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-}
-
-.middle-part .campaign-button {
-  align-self: center;
-  width: fit-content;
-}
-
-.mobile-menu .account-bar {
-  justify-content: center;
 }
 
 /* ||| Header styling----------------------------------------- */
@@ -557,6 +465,99 @@ header {
   color: #282931;
   text-align: center;
   max-width: 50%;
+}
+
+/* ||| Absolutely positioned elements----------------------------------------- */
+.header-hello-background {
+  position: absolute;
+  top: 0;
+  background-image: url('../images/headline-bg.jpg');
+  filter: grayscale(100%) brightness(120%) contrast(10%);
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.mobile-menu {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  min-height: 100vh;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: -2;
+  background-image: url('../images/mobile-bg.png');
+  background-size: 100% auto;
+  backdrop-filter: blur(4px);
+}
+
+.toolbar {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+.cancel {
+  margin: 11px 22px auto auto;
+  padding: 12px;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: var(--shark);
+  background-image: url('../images/cancel-icon.svg');
+  background-position: center;
+}
+
+.middle-part {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+}
+
+.mobile-list {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0 12px;
+  background-color: rgba(40, 41, 49, 0.25);
+  width: calc(100% - 24px);
+  padding: 12px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-list li {
+  width: 100%;
+  border: 2px solid #fff;
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+
+.mobile-list a {
+  display: block;
+  padding: 12px;
+  color: var(--shark);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.middle-part .campaign-button {
+  align-self: center;
+  width: fit-content;
+}
+
+.mobile-menu .account-bar {
+  justify-content: center;
 }
 
 /* |||@media small mobile logo-------------------------------- */
