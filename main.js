@@ -25,8 +25,8 @@ function showMobileMenu(e) {
 
 function hideMobileMenu(e) {
   if (
-    e.currentTarget.classList.contains('cancel') ||
-    e.currentTarget.parentNode.classList.contains(
+    e.currentTarget.classList.contains('cancel')
+    || e.currentTarget.parentNode.classList.contains(
       'mobile-list',
     )
   ) {
@@ -51,9 +51,7 @@ function hideMobileMenuOnEvent(e) {
 
 mobileMenuButton.addEventListener('click', showMobileMenu);
 cancelMobileMenu.addEventListener('click', hideMobileMenu);
-mobileMenuList.forEach((node) =>
-  node.addEventListener('click', hideMobileMenu),
-);
+mobileMenuList.forEach((node) => node.addEventListener('click', hideMobileMenu));
 window.addEventListener('scroll', hideMobileMenuOnEvent);
 window.addEventListener('resize', hideMobileMenuOnEvent);
 
@@ -131,7 +129,7 @@ const dynamicSpeakers = document.querySelector(
 
 const loadSpeakers = () => {
   speakersData.forEach((speaker) => {
-    let render = `
+    const render = `
           <li class="${speaker.id}">
           <div class="profile-photo">
           </div>

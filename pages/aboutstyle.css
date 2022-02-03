@@ -111,12 +111,14 @@ header {
 }
 
 .desktop-nav > * {
-  padding-left: calc(
-    0.2 * (100vw - var(--media-breakpoint)) + 12px
-  );
-  padding-right: calc(
-    0.2 * (100vw - var(--media-breakpoint)) + 12px
-  );
+  padding-left:
+    calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 12px
+    );
+  padding-right:
+    calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 12px
+    );
 }
 
 .account-bar {
@@ -381,11 +383,11 @@ header {
 
 /* speakers */
 .event1 {
-  background-image: url('../images/Hastings1895.jpg');
+  background-image: url("../images/Hastings1895.jpg");
 }
 
 .event2 {
-  background-image: url('../images/StPete1909.jpg');
+  background-image: url("../images/StPete1909.jpg");
 }
 
 /* ||| partners section-------------------------------------- */
@@ -471,7 +473,7 @@ header {
 .header-hello-background {
   position: absolute;
   top: 0;
-  background-image: url('../images/headline-bg.jpg');
+  background-image: url("../images/headline-bg.jpg");
   filter: grayscale(100%) brightness(120%) contrast(10%);
   background-repeat: repeat;
   background-size: cover;
@@ -491,7 +493,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   z-index: -2;
-  background-image: url('../images/mobile-bg.png');
+  background-image: url("../images/mobile-bg.png");
   background-size: 100% auto;
   backdrop-filter: blur(4px);
 }
@@ -509,7 +511,7 @@ header {
   width: 32px;
   border-radius: 50%;
   background-color: var(--shark);
-  background-image: url('../images/cancel-icon.svg');
+  background-image: url("../images/cancel-icon.svg");
   background-position: center;
 }
 
@@ -525,9 +527,9 @@ header {
   box-sizing: border-box;
   list-style: none;
   margin: 0 12px;
-  background-color: rgba(40, 41, 49, 0.25);
+  background-color: rgb(40 41 49 / 25%);
   width: calc(100% - 24px);
-  padding: 12px 12px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -606,6 +608,7 @@ header {
     font-size: 10px;
   }
 }
+
 /* |||@media mobile only-------------------------------------- */
 
 @media only screen and (max-width: 768px) {
@@ -636,12 +639,14 @@ header {
   }
 
   .headline-section > * {
-    margin-left: calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 24px
-    );
-    margin-right: calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 24px
-    );
+    margin-left:
+      calc(
+        0.2 * (100vw - var(--media-breakpoint)) + 24px
+      );
+    margin-right:
+      calc(
+        0.2 * (100vw - var(--media-breakpoint)) + 24px
+      );
     max-width: 80%;
   }
 
@@ -656,24 +661,28 @@ header {
 
   /* About logo section */
   .about-logo-section > * {
-    margin-left: calc(
-      0.15 * (100vw - var(--media-breakpoint)) + 24px
-    );
-    margin-right: calc(
-      0.15 * (100vw - var(--media-breakpoint)) + 24px
-    );
+    margin-left:
+      calc(
+        0.15 * (100vw - var(--media-breakpoint)) + 24px
+      );
+    margin-right:
+      calc(
+        0.15 * (100vw - var(--media-breakpoint)) + 24px
+      );
     max-width: 80%;
   }
 
   /* ||| past events section */
 
   .speakers-section > * {
-    margin-left: calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 12px
-    );
-    margin-right: calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 12px
-    );
+    margin-left:
+      calc(
+        0.2 * (100vw - var(--media-breakpoint)) + 12px
+      );
+    margin-right:
+      calc(
+        0.2 * (100vw - var(--media-breakpoint)) + 12px
+      );
   }
 
   .dynamic-speakers {
@@ -693,12 +702,14 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 48px 0;
-    margin-left: calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 12px
-    );
-    margin-right: calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 12px
-    );
+    margin-left:
+      calc(
+        0.2 * (100vw - var(--media-breakpoint)) + 12px
+      );
+    margin-right:
+      calc(
+        0.2 * (100vw - var(--media-breakpoint)) + 12px
+      );
   }
 
   .license .logo-text {
