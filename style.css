@@ -171,6 +171,7 @@ header {
   font-weight: 100;
   position: relative;
   top: 6px;
+  color: var(--shark);
 }
 
 .page-navigation {

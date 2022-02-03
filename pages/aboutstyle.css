@@ -168,6 +168,7 @@ header {
   font-weight: 100;
   position: relative;
   top: 6px;
+  color: var(--shark);
 }
 
 .page-navigation {
@@ -251,13 +252,14 @@ header {
 
 .headline-section .contact p {
   color: var(--shark);
-  font-size: 16px;
+  font-size: 20px;
   inline-size: 90%;
 }
 
 .headline-section .contact h3 {
   color: var(--shark);
   font-size: 24px;
+  font-weight: 700;
   inline-size: 90%;
   overflow-wrap: break-word;
 }
