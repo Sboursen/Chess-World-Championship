@@ -99,7 +99,7 @@ header {
   background-color: transparent;
 }
 
-.mobile-nav button {
+.mobile-nav .mobile-menu-button {
   height: 100%;
   padding: 8px;
   display: flex;
@@ -204,6 +204,19 @@ header {
   font-family: COCOGOOSE, sans-serif;
 }
 
+/* mobile nav */
+.mobile-nav .mobile-menu-button:hover {
+  background-color: var(--shark);
+  color: white;
+}
+
+.mobile-nav .mobile-menu-button:active {
+  border: 0.5px solid var(--iron);
+  background-color: var(--shark);
+  cursor: pointer;
+}
+
+
 /* ||| headline section-------------------------------------- */
 .headline-section {
   display: flex;
@@ -305,8 +318,8 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #d3d3d333;
-  border: 3px solid var(--iron);
-  border: 3px solid transparent;
+  border: 2px solid var(--iron);
+  border: 2px solid transparent;
 }
 
 .program-section li > div {
@@ -336,6 +349,16 @@ header {
   color: white;
   text-decoration: underline;
   text-underline-position: under;
+}
+
+/* program-section  */
+.program-section li:hover {
+  transform: scale(1.02);
+}
+
+.program-section li:active {
+  transform: scale(1);
+  border: 2px solid var(--iron);
 }
 
 /* ||| speakers section-------------------------------------- */
@@ -642,6 +665,16 @@ header {
   justify-content: center;
 }
 
+.cancel:hover {
+  background-color: var(--red-orange);
+}
+
+.cancel:active {
+  border: 0.5px solid var(--iron);
+  background-color: var(--red-orange);
+  cursor: pointer;
+}
+
 /* ||| mobile only-------------------------------------- */
 
 @media only screen and (max-width: 768px) {
@@ -720,6 +753,8 @@ header {
     align-content: space-between;
     background-color: rgb(211 211 211 / 20%);
     max-width: 195px;
+    border: 3px solid var(--iron);
+    border: 3px solid transparent;
   }
 
   .program-section li > div {
@@ -735,6 +770,17 @@ header {
     max-width: 100%;
     text-align: center;
   }
+
+  /* program-section  */
+.program-section li:hover {
+  transform: scale(1.05);
+}
+
+.program-section li:active {
+  transform: scale(1);
+  border: 3px solid var(--iron);
+}
+
 
   /* speakers section */
 
@@ -780,16 +826,6 @@ header {
 
 /* ||| animations and effects --------------------------------- */
 
-.cancel:hover {
-  background-color: var(--red-orange);
-}
-
-.cancel:active {
-  border: 0.5px solid var(--iron);
-  background-color: var(--red-orange);
-  cursor: pointer;
-}
-
 .page-navigation button:hover {
   color: white;
   background-color: var(--red-orange);
@@ -815,15 +851,6 @@ header {
   cursor: pointer;
 }
 
-/* program-section  */
-.program-section li:hover {
-  transform: scale(1.05);
-}
-
-.program-section li:active {
-  transform: scale(1);
-  border: 3px solid var(--iron);
-}
 
 
 /* speakers-section  */
