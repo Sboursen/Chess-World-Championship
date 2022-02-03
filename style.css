@@ -24,6 +24,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   font-family: Lato, sans-serif;
+  background-color: #747474;
 }
 
 hr {
@@ -114,14 +115,12 @@ header {
 }
 
 .desktop-nav > * {
-  padding-left:
-    calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 12px
-    );
-  padding-right:
-    calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 12px
-    );
+  padding-left: calc(
+    0.2 * (100vw - var(--media-breakpoint)) + 12px
+  );
+  padding-right: calc(
+    0.2 * (100vw - var(--media-breakpoint)) + 12px
+  );
 }
 
 .account-bar {
@@ -208,6 +207,8 @@ header {
   align-items: flex-start;
   gap: 12px;
   min-height: calc(100vh - 76px);
+  background-color: var(--iron);
+  background-color: transparent;
 }
 
 .headline-section > * {
@@ -224,7 +225,7 @@ header {
   font-family: Lato, sans-serif;
   font-size: 56px;
   font-weight: 800;
-  background-image: url("./images/tittle-bg.jpg");
+  background-image: url('./images/tittle-bg.jpg');
   /* stylelint-disable-next-line property-no-vendor-prefix */
   -webkit-background-clip: text;
   color: transparent;
@@ -255,7 +256,7 @@ header {
   justify-content: space-around;
   gap: 16px;
   min-height: 50vh;
-  background-image: url("./images/program-bg.png");
+  background-image: url('./images/program-bg.png');
   background-color: var(--shark);
   padding-top: 50px;
   padding-bottom: 50px;
@@ -419,51 +420,43 @@ header {
 
 /* speakers */
 .speaker1 .profile-photo {
-  background-image:
-    url("./images/morphy1.jpg"),
-    url("./images/chessboard.svg");
+  background-image: url('./images/morphy1.jpg'),
+    url('./images/chessboard.svg');
 }
 
 .speaker2 .profile-photo {
-  background-image:
-    url("./images/petrosian2.jpg"),
-    url("./images/chessboard.svg");
+  background-image: url('./images/petrosian2.jpg'),
+    url('./images/chessboard.svg');
 }
 
 .speaker3 .profile-photo {
-  background-image:
-    url("./images/kasparov3.jpg"),
-    url("./images/chessboard.svg");
+  background-image: url('./images/kasparov3.jpg'),
+    url('./images/chessboard.svg');
 }
 
 .speaker4 .profile-photo {
-  background-image:
-    url("./images/Judit4.jpg"),
-    url("./images/chessboard.svg");
+  background-image: url('./images/Judit4.jpg'),
+    url('./images/chessboard.svg');
 }
 
 .speaker5 .profile-photo {
-  background-image:
-    url("./images/capablanca5.jpg"),
-    url("./images/chessboard.svg");
+  background-image: url('./images/capablanca5.jpg'),
+    url('./images/chessboard.svg');
 }
 
 .speaker6 .profile-photo {
-  background-image:
-    url("./images/tal6.jpg"),
-    url("./images/chessboard.svg");
+  background-image: url('./images/tal6.jpg'),
+    url('./images/chessboard.svg');
 }
 
 .speaker7 .profile-photo {
-  background-image:
-    url("./images/fischer7.jpg"),
-    url("./images/chessboard.svg");
+  background-image: url('./images/fischer7.jpg'),
+    url('./images/chessboard.svg');
 }
 
 .speaker8 .profile-photo {
-  background-image:
-    url("./images/steinitz8.jpg"),
-    url("./images/chessboard.svg");
+  background-image: url('./images/steinitz8.jpg'),
+    url('./images/chessboard.svg');
 }
 
 /* ||| partners section-------------------------------------- */
@@ -549,7 +542,7 @@ header {
 .header-hello-background {
   position: absolute;
   top: 0;
-  background-image: url("./images/headline-bg.jpg");
+  background-image: url('./images/headline-bg.jpg');
   filter: grayscale(100%) brightness(120%) contrast(10%);
   background-repeat: repeat;
   background-size: cover;
@@ -569,7 +562,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   z-index: -2;
-  background-image: url("./images/mobile-bg.png");
+  background-image: url('./images/mobile-bg.png');
   background-size: 100% auto;
   backdrop-filter: blur(4px);
 }
@@ -587,7 +580,7 @@ header {
   width: 32px;
   border-radius: 50%;
   background-color: var(--shark);
-  background-image: url("./images/cancel-icon.svg");
+  background-image: url('./images/cancel-icon.svg');
   background-position: center;
 }
 
@@ -667,14 +660,12 @@ header {
   }
 
   .headline-section > * {
-    margin-left:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 24px
-      );
-    margin-right:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 24px
-      );
+    margin-left: calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 24px
+    );
+    margin-right: calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 24px
+    );
     max-width: 80%;
   }
 
@@ -688,14 +679,12 @@ header {
 
   /* program section */
   .program-section > * {
-    margin-left:
-      calc(
-        0.15 * (100vw - var(--media-breakpoint)) + 24px
-      );
-    margin-right:
-      calc(
-        0.15 * (100vw - var(--media-breakpoint)) + 24px
-      );
+    margin-left: calc(
+      0.15 * (100vw - var(--media-breakpoint)) + 24px
+    );
+    margin-right: calc(
+      0.15 * (100vw - var(--media-breakpoint)) + 24px
+    );
     max-width: 80%;
   }
 
@@ -735,14 +724,12 @@ header {
   /* speakers section */
 
   .speakers-section > * {
-    margin-left:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 12px
-      );
-    margin-right:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 12px
-      );
+    margin-left: calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 12px
+    );
+    margin-right: calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 12px
+    );
   }
 
   .dynamic-speakers {
@@ -762,14 +749,12 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 48px 0;
-    margin-left:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 12px
-      );
-    margin-right:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 12px
-      );
+    margin-left: calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 12px
+    );
+    margin-right: calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 12px
+    );
   }
 
   .license .logo-text {
