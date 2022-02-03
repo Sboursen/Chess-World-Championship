@@ -517,6 +517,7 @@ header {
   align-items: center;
   padding: 48px 16px;
   gap: 24px;
+  background-color: white;
 }
 
 .license .logo {
@@ -755,14 +756,14 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 48px 0;
-    margin-left: calc(
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: calc(
       0.2 * (100vw - var(--media-breakpoint)) + 12px
     );
-    margin-right: calc(
+    padding-right: calc(
       0.2 * (100vw - var(--media-breakpoint)) + 12px
     );
-  }
 
   .license .logo-text {
     text-align: left;
