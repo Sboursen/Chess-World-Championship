@@ -192,6 +192,10 @@ header {
   padding: 12px;
 }
 
+.pages .current-page {
+  color: var(--red-orange);
+}
+
 .page-navigation button {
   color: var(--red-orange);
   background-color: white;
