@@ -133,22 +133,24 @@ const dynamicSpeakers = document.querySelector(
 );
 
 const loadSpeakers = () => {
-  speakersData.forEach((speaker) => {
-    const render = `
-          <li class="${speaker.id}">
-          <div class="profile-photo">
-          </div>
-          <div class="profile-info">
-            <h3 class="name">${speaker.name}</h3>
-            <p class="hall-of-fame">${speaker.description1}<br>${speaker.description2}
-            </p>
-            <hr>
-            <a
-              href="${speaker.moreInfoLink}">More
-              info</a>
-          </div>
-          </li>`;
-    dynamicSpeakers.innerHTML += `\n ${render}`;
-  });
+  if (dynamicSpeakers !== null) {
+    speakersData.forEach((speaker) => {
+      const render = `
+            <li class="${speaker.id}">
+            <div class="profile-photo">
+            </div>
+            <div class="profile-info">
+              <h3 class="name">${speaker.name}</h3>
+              <p class="hall-of-fame">${speaker.description1}<br>${speaker.description2}
+              </p>
+              <hr>
+              <a
+                href="${speaker.moreInfoLink}">More
+                info</a>
+            </div>
+            </li>`;
+      dynamicSpeakers.innerHTML += `\n ${render}`;
+    });
+  }
 };
 document.addEventListener('DOMContentLoaded', loadSpeakers);

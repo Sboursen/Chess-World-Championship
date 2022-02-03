@@ -393,6 +393,8 @@ header {
   align-items: center;
   gap: 12px;
   color: white;
+  background-size: auto 100%;
+  background-position: center;
 }
 
 /* speakers */
@@ -402,6 +404,11 @@ header {
 
 .event2 {
   background-image: url('../images/StPete1909.jpg');
+}
+
+.event-info:hover {
+  background-color: #ad00004d;
+  background-size: auto 200%;
 }
 
 /* ||| partners section-------------------------------------- */
