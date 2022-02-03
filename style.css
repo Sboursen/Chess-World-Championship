@@ -789,7 +789,7 @@ header {
     justify-content: flex-start;
     align-content: space-between;
     background-color: rgb(211 211 211 / 20%);
-    max-width: 200px;
+    max-width: 190px;
     height: 150px;
     border: 3px solid var(--iron);
     border: 3px solid transparent;
