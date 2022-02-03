@@ -50,7 +50,9 @@ It's a website about a Chess conference held in Marrakech, Morocco.
 > to multiple issue with
 > this project 🙏🙏🙏
 
--
+- [Alex](https://github.com/harlexkhal)
+- [Dagic](https://github.com/Dagic-zewdu)
+- [David](https://github.com/daudi13)
 
 ## Show your support
 
