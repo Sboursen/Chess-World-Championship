@@ -539,6 +539,10 @@ header {
   font-size: 24px;
 }
 
+.partners-section li:hover {
+  transform: scale(1.2);
+}
+
 /* ||| license section-------------------------------------- */
 
 .license {
@@ -572,6 +576,10 @@ header {
   color: #282931;
   text-align: center;
   max-width: 50%;
+}
+
+.license .logo:hover {
+transform: scale(1.1);
 }
 
 /* ||| Absolutely positioned elements----------------------------------------- */
