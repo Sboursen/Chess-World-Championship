@@ -150,7 +150,7 @@ header {
   align-items: center;
   padding-top: 12px;
   padding-bottom: 12px;
-  box-shadow: 4px 0 4px 1px lightslategray;
+  box-shadow: 0 2px 2px 1px rgb(48 62 77 / 54.8%);
 }
 
 .nav-bar .logo {
@@ -790,14 +790,4 @@ header {
   background-color: var(--iron);
   border: 2px solid var(--red-orange);
   cursor: pointer;
-}
-
-a.to-the-top-button.icon-animation {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 5px;
-  z-index: 3;
-  transform: rotate(180deg);
-  box-shadow: -2px -2px 10px 1px lightgray;
 }
