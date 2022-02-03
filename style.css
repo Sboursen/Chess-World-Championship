@@ -251,8 +251,10 @@ header {
 
 .headline-section .supporting-text {
   padding: 12px;
-  background-color: var(--iron);
-  border: 3px solid white;
+  color: var(--shark);
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid var(--iron);
 }
 
 .headline-section .date {
