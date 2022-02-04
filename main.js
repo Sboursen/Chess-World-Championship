@@ -20,7 +20,7 @@ function showMobileMenu(e) {
   ) {
     mobileMenu.style.display = 'flex';
     mobileMenu.style['z-index'] = 2;
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflowX = 'hidden';
   }
 }
 
@@ -33,7 +33,7 @@ function hideMobileMenu(e) {
   ) {
     mobileMenu.style.display = 'none';
     mobileMenu.style['z-index'] = -2;
-    document.body.style.overflow = 'scroll';
+    document.body.style.overflowX = 'scroll';
   }
 }
 
@@ -43,12 +43,12 @@ function hideMobileMenuOnEvent(e) {
       if (window.innerWidth > MEDIA_BREAKPOINT) {
         mobileMenu.style.display = 'none';
         mobileMenu.style['z-index'] = -2;
-        document.body.style.overflow = 'scroll';
+        document.body.style.overflowX = 'scroll';
       }
     } else {
       mobileMenu.style.display = 'none';
       mobileMenu.style['z-index'] = -2;
-      document.body.style.overflow = 'scroll';
+      document.body.style.overflowX = 'scroll';
     }
   }
 }
