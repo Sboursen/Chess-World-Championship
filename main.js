@@ -20,20 +20,20 @@ function showMobileMenu(e) {
   ) {
     mobileMenu.style.display = 'flex';
     mobileMenu.style['z-index'] = 2;
-    document.body.style.overflowX = 'hidden';
+    document.body.style.overflowY = 'hidden';
   }
 }
 
 function hideMobileMenu(e) {
   if (
-    e.currentTarget.classList.contains('cancel')
-    || e.currentTarget.parentNode.classList.contains(
+    e.currentTarget.classList.contains('cancel') ||
+    e.currentTarget.parentNode.classList.contains(
       'mobile-list',
     )
   ) {
     mobileMenu.style.display = 'none';
     mobileMenu.style['z-index'] = -2;
-    document.body.style.overflowX = 'scroll';
+    document.body.style.overflowY = 'scroll';
   }
 }
 
@@ -43,19 +43,21 @@ function hideMobileMenuOnEvent(e) {
       if (window.innerWidth > MEDIA_BREAKPOINT) {
         mobileMenu.style.display = 'none';
         mobileMenu.style['z-index'] = -2;
-        document.body.style.overflowX = 'scroll';
+        document.body.style.overflowY = 'scroll';
       }
     } else {
       mobileMenu.style.display = 'none';
       mobileMenu.style['z-index'] = -2;
-      document.body.style.overflowX = 'scroll';
+      document.body.style.overflowY = 'scroll';
     }
   }
 }
 
 mobileMenuButton.addEventListener('click', showMobileMenu);
 cancelMobileMenu.addEventListener('click', hideMobileMenu);
-mobileMenuList.forEach((node) => node.addEventListener('click', hideMobileMenu));
+mobileMenuList.forEach((node) =>
+  node.addEventListener('click', hideMobileMenu),
+);
 window.addEventListener('resize', hideMobileMenuOnEvent);
 
 // |||Dynamic project details generation
