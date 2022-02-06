@@ -9,13 +9,9 @@ const headerHelloBg = document.querySelector(
 );
 
 const fitTheBgImageToTopSection = () => {
-  headerHelloBg.style.height =
-    header.offsetHeight +
-    headlineSection.offsetHeight +
-    'px';
-  console.log(headlineSection.offsetHeight);
-  console.log(header.offsetHeight);
-  console.log(headerHelloBg.style.height);
+  headerHelloBg.style.height = `${
+    header.offsetHeight + headlineSection.offsetHeight
+  }px`;
 };
 
 ['DOMContentLoaded', 'resize'].forEach((e) => {
@@ -50,8 +46,8 @@ function showMobileMenu(e) {
 
 function hideMobileMenu(e) {
   if (
-    e.currentTarget.classList.contains('cancel') ||
-    e.currentTarget.parentNode.classList.contains(
+    e.currentTarget.classList.contains('cancel')
+    || e.currentTarget.parentNode.classList.contains(
       'mobile-list',
     )
   ) {
@@ -79,9 +75,7 @@ function hideMobileMenuOnEvent(e) {
 
 mobileMenuButton.addEventListener('click', showMobileMenu);
 cancelMobileMenu.addEventListener('click', hideMobileMenu);
-mobileMenuList.forEach((node) =>
-  node.addEventListener('click', hideMobileMenu),
-);
+mobileMenuList.forEach((node) => node.addEventListener('click', hideMobileMenu));
 window.addEventListener('resize', hideMobileMenuOnEvent);
 
 // |||Dynamic project details generation
