@@ -175,7 +175,7 @@ const loadSpeakers = () => {
               <hr>
               <a
                 href="${speaker.moreInfoLink}">More
-                info</a>
+                info @ WorldChessHof</a>
             </div>
             </li>`;
       dynamicSpeakers.innerHTML += `\n ${render}`;
