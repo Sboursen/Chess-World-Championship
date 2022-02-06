@@ -524,9 +524,36 @@ header {
   color: var(--iron);
 }
 
-.partners-section li {
-  padding: 12px;
-  font-size: 24px;
+.partners-section a {
+  display: block;
+  width: 210px;
+  height: 130px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* partners */
+.partners-section a.partner1 {
+  background-image: url('./images/mozilla.png');
+}
+
+.partners-section a.partner2 {
+  background-image: url('./images/lichess.png');
+}
+
+.partners-section a.partner3 {
+  background-image: url('./images/fide.png');
+}
+
+.partners-section a.partner4 {
+  background-image: url('./images/chessable.png');
+  background-size: 150% auto;
+}
+
+.partners-section a.partner5 {
+  background-image: url('./images/microverse.png');
+  background-size: 100% auto;
 }
 
 /* ||| license section-------------------------------------- */
@@ -566,6 +593,10 @@ header {
 
 .license .logo:hover {
   transform: scale(1.1);
+}
+
+.dynamic-speakers a:hover {
+  color: var(--red-orange);
 }
 
 /* ||| Absolutely positioned elements----------------------------------------- */

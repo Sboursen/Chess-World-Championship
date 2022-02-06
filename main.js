@@ -21,14 +21,6 @@ const fitTheBgImageToTopSection = () => {
         .slice(0, -2),
     )
   }px`;
-
-  console.log(
-    Number(
-      getComputedStyle(headlineSection)
-        .getPropertyValue('height')
-        .slice(0, -2),
-    ),
-  );
 };
 
 ['DOMContentLoaded', 'resize', 'pageshow'].forEach((e) => {
