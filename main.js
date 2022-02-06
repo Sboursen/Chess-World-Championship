@@ -1,3 +1,27 @@
+// |||Responsive headline section backgound
+
+const header = document.querySelector('header');
+const headlineSection = document.querySelector(
+  'section.headline-section',
+);
+const headerHelloBg = document.querySelector(
+  '.header-hello-background',
+);
+
+const fitTheBgImageToTopSection = () => {
+  headerHelloBg.style.height =
+    header.offsetHeight +
+    headlineSection.offsetHeight +
+    'px';
+  console.log(headlineSection.offsetHeight);
+  console.log(header.offsetHeight);
+  console.log(headerHelloBg.style.height);
+};
+
+['DOMContentLoaded', 'resize'].forEach((e) => {
+  window.addEventListener(e, fitTheBgImageToTopSection);
+});
+
 // |||Mobile menu
 const MEDIA_BREAKPOINT = 768;
 const mobileMenuButton = document.querySelector(

@@ -92,7 +92,7 @@ header {
 .mobile-nav {
   width: calc(100% - 48px);
   height: 48px;
-  margin: 12px 24px;
+  padding: 12px 24px;
   background-color: white;
   background-color: transparent;
 }
@@ -511,8 +511,7 @@ header {
   filter: grayscale(100%) brightness(200%) contrast(15%);
   background-repeat: repeat;
   background-size: cover;
-  background-position: bottom center;
-  min-height: 100vh;
+  background-position: center;
   width: 100%;
   z-index: -1;
 }
@@ -680,6 +679,9 @@ header {
 
   /* site map */
   .site-map {
+    position: absolute;
+    top: 0;
+    align-self: flex-end;
     display: block;
     margin: 12px
       calc(0.2 * (100vw - var(--media-breakpoint)) + 12px);
@@ -703,6 +705,7 @@ header {
 
   /* ||| headline section */
   .headline-section {
+    position: relative;
     min-height: calc(100vh - 121px);
     justify-content: center;
   }
