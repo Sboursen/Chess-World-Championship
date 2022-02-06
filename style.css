@@ -576,7 +576,7 @@ header {
   filter: grayscale(80%) brightness(200%) contrast(15%);
   background-repeat: repeat;
   background-size: cover;
-  background-position: bottom center;
+  background-position: center;
   width: 100%;
   z-index: -1;
 }
