@@ -113,14 +113,12 @@ header {
 }
 
 .desktop-nav > * {
-  padding-left:
-    calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 12px
-    );
-  padding-right:
-    calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 12px
-    );
+  padding-left: calc(
+    0.2 * (100vw - var(--media-breakpoint)) + 12px
+  );
+  padding-right: calc(
+    0.2 * (100vw - var(--media-breakpoint)) + 12px
+  );
 }
 
 .account-bar {
@@ -409,11 +407,11 @@ header {
 
 /* speakers */
 .event1 {
-  background-image: url("../images/Hastings1895.jpg");
+  background-image: url('../images/Hastings1895.jpg');
 }
 
 .event2 {
-  background-image: url("../images/StPete1909.jpg");
+  background-image: url('../images/StPete1909.jpg');
 }
 
 .event-info:hover {
@@ -509,11 +507,11 @@ header {
 .header-hello-background {
   position: absolute;
   top: 0;
-  background-image: url("../images/headline-bg.jpg");
+  background-image: url('../images/headline-bg.jpg');
   filter: grayscale(100%) brightness(200%) contrast(15%);
   background-repeat: repeat;
   background-size: cover;
-  background-position: center;
+  background-position: bottom center;
   min-height: 100vh;
   width: 100%;
   z-index: -1;
@@ -529,7 +527,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   z-index: -2;
-  background-image: url("../images/mobile-bg.png");
+  background-image: url('../images/mobile-bg.png');
   background-size: 100% auto;
   backdrop-filter: blur(4px);
 }
@@ -547,7 +545,7 @@ header {
   width: 32px;
   border-radius: 50%;
   background-color: var(--shark);
-  background-image: url("../images/cancel-icon.svg");
+  background-image: url('../images/cancel-icon.svg');
   background-position: center;
 }
 
@@ -609,6 +607,10 @@ header {
     display: none;
   }
 
+  .site-map {
+    display: none;
+  }
+
   .about-logo-section .logo-container {
     position: relative;
     display: flex;
@@ -655,6 +657,10 @@ header {
   .desktop-nav {
     display: none;
   }
+
+  .site-map {
+    display: none;
+  }
 }
 
 /* |||@media desktop only -------------------------------------- */
@@ -672,6 +678,29 @@ header {
     display: none;
   }
 
+  /* site map */
+  .site-map {
+    display: block;
+    margin: 12px
+      calc(0.2 * (100vw - var(--media-breakpoint)) + 12px);
+  }
+
+  .site-map ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 6px 12px;
+    gap: 12px;
+  }
+
+  .site-map div {
+    color: var(--red-orange);
+  }
+
+  .site-map a {
+    color: var(--shark);
+  }
+
   /* ||| headline section */
   .headline-section {
     min-height: calc(100vh - 121px);
@@ -679,14 +708,12 @@ header {
   }
 
   .headline-section > * {
-    margin-left:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 24px
-      );
-    margin-right:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 24px
-      );
+    margin-left: calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 24px
+    );
+    margin-right: calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 24px
+    );
     max-width: 80%;
   }
 
@@ -704,28 +731,24 @@ header {
 
   /* About logo section */
   .about-logo-section > * {
-    margin-left:
-      calc(
-        0.15 * (100vw - var(--media-breakpoint)) + 24px
-      );
-    margin-right:
-      calc(
-        0.15 * (100vw - var(--media-breakpoint)) + 24px
-      );
+    margin-left: calc(
+      0.15 * (100vw - var(--media-breakpoint)) + 24px
+    );
+    margin-right: calc(
+      0.15 * (100vw - var(--media-breakpoint)) + 24px
+    );
     max-width: 80%;
   }
 
   /* ||| past events section */
 
   .speakers-section > * {
-    margin-left:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 12px
-      );
-    margin-right:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 12px
-      );
+    margin-left: calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 12px
+    );
+    margin-right: calc(
+      0.2 * (100vw - var(--media-breakpoint)) + 12px
+    );
   }
 
   .dynamic-speakers {
@@ -744,8 +767,7 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding:
-      48px
+    padding: 48px
       calc(0.2 * (100vw - var(--media-breakpoint)) + 12px);
   }
 
