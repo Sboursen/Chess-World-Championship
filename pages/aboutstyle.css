@@ -92,7 +92,7 @@ header {
 .mobile-nav {
   width: calc(100% - 48px);
   height: 48px;
-  margin: 12px 24px;
+  padding: 12px 24px;
   background-color: white;
   background-color: transparent;
 }
@@ -514,7 +514,6 @@ header {
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
   width: 100%;
   z-index: -1;
 }
@@ -609,6 +608,10 @@ header {
     display: none;
   }
 
+  .site-map {
+    display: none;
+  }
+
   .about-logo-section .logo-container {
     position: relative;
     display: flex;
@@ -655,6 +658,10 @@ header {
   .desktop-nav {
     display: none;
   }
+
+  .site-map {
+    display: none;
+  }
 }
 
 /* |||@media desktop only -------------------------------------- */
@@ -672,8 +679,36 @@ header {
     display: none;
   }
 
+  /* site map */
+  .site-map {
+    position: absolute;
+    top: 0;
+    align-self: flex-end;
+    display: block;
+    margin:
+      12px
+      calc(0.2 * (100vw - var(--media-breakpoint)) + 12px);
+  }
+
+  .site-map ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 6px 12px;
+    gap: 12px;
+  }
+
+  .site-map div {
+    color: var(--red-orange);
+  }
+
+  .site-map a {
+    color: var(--shark);
+  }
+
   /* ||| headline section */
   .headline-section {
+    position: relative;
     min-height: calc(100vh - 121px);
     justify-content: center;
   }
